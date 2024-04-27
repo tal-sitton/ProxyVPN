@@ -15,7 +15,6 @@ COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 EXPOSE 8118
-
 CMD ["/entrypoint.sh"]
 
 HEALTHCHECK --interval=10s --timeout=10s  --start-period=15s\
