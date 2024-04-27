@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  vpn-proxy:
+    build: .
+    ports:
+      - "8118:8118"
+    privileged: true
+    dns: "1.1.1.1"
+    env_file: .env
