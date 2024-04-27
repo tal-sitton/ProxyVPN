@@ -1,5 +1,5 @@
 #! /bin/bash
-
+sysctl net.ipv6.conf.all.disable_ipv6=0
 # create tun device
 mkdir -p /dev/net
 mknod /dev/net/tun c 10 200
