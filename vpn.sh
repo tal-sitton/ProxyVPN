@@ -9,6 +9,11 @@ get_ovpn_files() {
   mkdir -p openvpns
   for key in "${paste_keys[@]}"; do
     curl -X POST -d "api_dev_key=$PASTE_DEV_KEY" -d "api_user_key=$PASTE_USER_KEY" -d "api_option=show_paste" -d "api_paste_key=$key" "https://pastebin.com/api/api_post.php" > "openvpns/$key.ovpn"
+    #check if file is valid
+    if grep -q "Bad API request" "openvpns/$key.ovpn"; then
+      echo "Failed to get ovpn file for $key"
+      exit 1
+    fi
   done
 }
 
