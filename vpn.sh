@@ -1,6 +1,7 @@
 #! /bin/bash
 
-paste_keys=("G6ndA3Rs" "NJCpNsUH" "NfF1QMiL" "bR4A6BhY" "y1hMn7Xa" "SxRkCK9t")
+# shellcheck disable=SC2206
+paste_keys=($PASTE_KEYS)
 
 my_ip=$(curl -s ifconfig.me)
 
