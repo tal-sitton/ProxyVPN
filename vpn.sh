@@ -20,18 +20,20 @@ get_ovpn_files() {
 
 # function to try to connect to vpn and check if it fails
 connect_vpn() {
-  for _ in {0..5}; do
+  while [ ${#paste_keys[@]} -gt 0 ]; do
     key=${paste_keys[$RANDOM % ${#paste_keys[@]}]}
     openvpn --config "openvpns/$key.ovpn" --daemon
     sleep 10
     if [[ $(curl -s ifconfig.me) != "$my_ip" ]]; then
       echo "Connected to VPN $key successfully: $(curl -s ifconfig.me)"
-      break
+      return 0
     else
       echo "Failed to connect to VPN $key, ip is still $my_ip"
       killall openvpn
     fi
+    paste_keys=(${paste_keys[@]/$key})
   done
+  exit 1
 }
 
 get_ovpn_files
