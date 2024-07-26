@@ -9,8 +9,8 @@ plugins:
   
 color:
   header: "#000"
-  gradient_left: "#e53935"
-  gradient_right: "#f57c00"
+  gradient_left: "#c400ff"
+  gradient_right: "#300d3d"
   
 darkmode: true
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
