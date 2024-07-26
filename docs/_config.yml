@@ -3,6 +3,10 @@ title: Proxy VPN
 description: "connect to a VPN and run a Privoxy service"
 markdown: kramdown
 
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  
 color:
   gradient_left: "#300d3d"
   gradient_right: "#c400fff"
