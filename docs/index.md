@@ -1,3 +1,5 @@
+<style> a, a:hover, a:focus, a:active { text-decoration: none; color: #ba00ff; } </style>
+
 ## Overview
 
 This project sets up a Docker container that automatically connects to a VPN using configuration files stored on
