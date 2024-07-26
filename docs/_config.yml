@@ -8,8 +8,9 @@ plugins:
   - jekyll-seo-tag
   
 color:
-  gradient_left: "#300d3d"
-  gradient_right: "#c400fff"
+  header: "#000"
+  gradient_left: "#e53935"
+  gradient_right: "#f57c00"
   
 darkmode: true
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
