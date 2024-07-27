@@ -14,6 +14,7 @@ color:
 darkmode: true
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
 
+show_downloads: true
 buttons:
   tar_title: About me
   tar_url: /
