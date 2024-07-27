@@ -16,6 +16,7 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 
 show_downloads: true
 buttons:
+  zip_hide: true
   tar_title: About me
   tar_url: /
   tar_hide: false
