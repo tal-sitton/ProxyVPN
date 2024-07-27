@@ -1,6 +1,6 @@
 remote_theme: tuur29/pages-themes-cayman
 title: Proxy VPN
-description: "connect to a VPN and run a Privoxy service"
+description: "run a Privoxy service over VPN to provide a privacy-enhanced web proxy"
 markdown: kramdown
 
 plugins:
