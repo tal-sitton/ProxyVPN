@@ -8,9 +8,13 @@ plugins:
   - jekyll-seo-tag
   
 color:
-  header: "#000"
   gradient_left: "#300d3d"
   gradient_right: "#ac01df"
   
 darkmode: true
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
+
+buttons:
+  tar_title: About me
+  tar_url: /
+  tar_hide: false
