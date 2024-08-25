@@ -33,7 +33,7 @@ connect_vpn() {
     fi
     paste_keys=(${paste_keys[@]/$key})
   done
-  exit 1
+  return 1
 }
 
 get_ovpn_files
