@@ -1,6 +1,6 @@
 remote_theme: tuur29/pages-themes-cayman
 title: Proxy VPN
-description: "connect to a VPN and run a Privoxy service"
+description: "run a Privoxy service over VPN to provide a privacy-enhanced web proxy"
 markdown: kramdown
 
 plugins:
@@ -8,9 +8,15 @@ plugins:
   - jekyll-seo-tag
   
 color:
-  header: "#000"
   gradient_left: "#300d3d"
   gradient_right: "#ac01df"
   
 darkmode: true
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
+
+show_downloads: true
+buttons:
+  zip_hide: true
+  tar_title: About me
+  tar_url: /
+  tar_hide: false
