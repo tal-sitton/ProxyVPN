@@ -66,7 +66,7 @@ You have three options to run the Docker container:
 
 2. **Configure Environment Variables**
 
-   Copy the provided [.env.example](.env.example) to `.env` and fill in the required information.
+   Copy the provided [.env.example](https://github.com/tal-sitton/ProxyVPN/blob/master/.env.example) to `.env` and fill in the required information.
 
    ```sh
    cp .env.example .env
@@ -89,13 +89,13 @@ You have three options to run the Docker container:
    ```
 
 This command will build the Docker image and start the container as defined in
-the [`docker-compose.yml`](docker-compose.yml) file.
+the [`docker-compose.yml`](https://github.com/tal-sitton/ProxyVPN/blob/master/docker-compose.yml) file.
 
 ### Option 3: Using Plain Docker Commands
 
 1. **Build the Docker Image**
 
-   build the docker image from [Dockerfile](Dockerfile)
+   build the docker image from [Dockerfile](https://github.com/tal-sitton/ProxyVPN/blob/master/Dockerfile)
 
    ```sh
    docker build -t proxy-vpn .
@@ -147,7 +147,7 @@ HEALTHCHECK --interval=10s --timeout=10s --start-period=15s \
 
 ## Privoxy Configuration
 
-The repo includes a Privoxy configuration file [privoxy-config](privoxy-config) that sets up the proxy server on
+The repo includes a Privoxy configuration file [privoxy-config](https://github.com/tal-sitton/ProxyVPN/blob/master/privoxy-config) that sets up the proxy server on
 port 8118. You can modify this file to customize the Privoxy configuration.
 
 ## Notes
